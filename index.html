@@ -8,12 +8,32 @@
   <body>
     <header>
       <h1>Calcular tempo no estacionamento</h1>
+      <div id="tabela-valores-tempo">
+        <table border="1" width="300px" height="auto">
+          <tr>
+            <th>Valor</th>
+            <th>Tempo</th>
+          </tr>
+          <tr>
+            <td>R$1,00</td>
+            <td>30 minutos</td>
+          </tr>
+          <tr>
+            <td>R$1,75</td>
+            <td>60 minutos</td>
+          </tr>
+          <tr>
+            <td>R$3,00</td>
+            <td>120 minutos (Valor máximo permitido)</td>
+          </tr>
+        </table>
+      </div>
     </header>
     <main>
       <section>
         <label for="valor">Insira o valor: </label>
-        <input type="text" />
-        <button>Calcular</button>
+        <input type="text" id="valor" placeholder="Valor a pagar" />
+        <button id="calcular">Calcular</button>
         <div id="calculo-tempo">
           <h2>Cálculo do valor e troco (Se houver)</h2>
           <p id="tempo"></p>
@@ -21,5 +41,6 @@
         </div>
       </section>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
